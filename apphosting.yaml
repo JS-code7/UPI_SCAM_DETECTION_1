@@ -1,0 +1,13 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Increase this value if you'd like to automatically spin up
+  # more instances in response to increased traffic.
+  maxInstances: 1
+# Required for Genkit to access the Google Cloud AI Platform APIs
+gcp_service_account: scamguard-upi@scamguard-upi.iam.gserviceaccount.com
+# Required for App Hosting to reference the Cloud Secret Manager secrets
+# created by Genkit
+labels:
+  genkit:project-id: scamguard-upi
